@@ -8,7 +8,7 @@ Assets used for this game were created by talented artist Ms Alice Brereton.
 
 ---
 
-#### User Story
+### User Story
 
 - The game starts in an initialized state. The user must press the center game to get started.
 - Users can switch between the three icons on the bottom using the left and right button. To press one of the icons, they will click the middle button. Users cannot directly click the icons.
