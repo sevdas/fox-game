@@ -1,3 +1,5 @@
+# Common formatting rules for teams working on different editors. 
+
 root = true
 
 [*]

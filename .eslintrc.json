@@ -5,11 +5,13 @@
     "prettier"
   ],
   "rules": {
+    // make warning instead of erroring
     "no-console": 1
   },
   "plugins":["import"],
   "parserOptions": {
     "ecmaVersion": 2018,
+    // alow us to use es6 imports. 
     "sourceType": "module"
   },
   "env": {
