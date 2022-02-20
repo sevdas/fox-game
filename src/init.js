@@ -1,15 +1,16 @@
-// Clock that ticks every 3 secs.
+import game from './gameState';
 
+// Clock that ticks every 3 secs.
 const TICK_RATE = 3000;
 
-function tick() {
-    console.log('tick', Date.now());
-}
+// function tick() {
+//     console.log('tick', Date.now());
+// }
 
 function init() {
     console.log('starting game');
 
-    // When 3 sec from now
+    // When 3 sec from nowX
     let nextTimeToTick = Date.now();
 
     // Closure to keep track of our time.
@@ -17,8 +18,7 @@ function init() {
         const now = Date.now();
 
         if (nextTimeToTick <= now) {
-            //Hey, is it time to tick yet? Not yet, cool just do nothing and schedule me again (requestAnimationFrame(nextAnimationFrame);)
-            tick();
+            game.tick();
 
             //reset
             nextTimeToTick = now + TICK_RATE;
